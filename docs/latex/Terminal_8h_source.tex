@@ -1,0 +1,180 @@
+\doxysection{Terminal.\+h}
+\hypertarget{Terminal_8h_source}{}\label{Terminal_8h_source}\index{Terminal/Terminal.h@{Terminal/Terminal.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ H\_TERMINAL}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ H\_TERMINAL}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }terminal\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT}}\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ ,\ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT}}\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}{OFF}}\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ ,\ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}{ON}}\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ ,\ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}{X}}\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ number;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}\ type;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ connections;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}\ signal;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ }
+
+
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_a0746a0bb1f8aa1ddeab7c89f56e1bbb3}{Terminal}}();}
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_a0746a0bb1f8aa1ddeab7c89f56e1bbb3}{Terminal}}(\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}},\ \textcolor{keywordtype}{int},\ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}},\ \textcolor{keywordtype}{int});}
+
+
+
+
+
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_a0746a0bb1f8aa1ddeab7c89f56e1bbb3}{Terminal}}(\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}},\ \textcolor{keywordtype}{int});}
+
+
+
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_afe9e2500a44bf48cf95cc77e701e06b8}{Terminal}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\&)\ =\ \textcolor{keywordflow}{default};}
+
+
+
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\&\ \mbox{\hyperlink{classterminal_1_1Terminal_ac8041c2e8fb68dbfde779ef89f6afa07}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\&)\ =\ \textcolor{keywordflow}{default};}
+
+
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_aa9c9e21038807a3b7341547d860dddb9}{\string~Terminal}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00063\ }
+
+
+
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classterminal_1_1Terminal_abb12f4c5521ce778f4b3f6413d0d1ad8}{getConnections}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}\ \mbox{\hyperlink{classterminal_1_1Terminal_a605c99c73b6db2136b083adb9a385380}{getSignal}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classterminal_1_1Terminal_a321cccff68436426e8003ad54b8152a2}{getNumber}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}\ \mbox{\hyperlink{classterminal_1_1Terminal_a014015f82be6f57e054b1d0e19b79eb6}{getType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+
+
+
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_abbab1890930841196d5a6220fbe9c8c0}{setType}}(\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}});}
+
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_ae7122efc8fc7cc207f670db38ab584a1}{setConnections}}(\textcolor{keywordtype}{int});}
+
+
+
+
+
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_a65647b3f7015095553d08fcc2755409b}{setSignal}}(\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}});}
+
+
+
+
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_a96ab0b43dc28555d118669ced6e07a88}{setNumber}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00114\ }
+
+
+
+
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classterminal_1_1Terminal_a9d10c212df4f68af91d21a381db559db}{print}}(std::ostream\&)\ \textcolor{keyword}{const};}
+
+
+
+
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ std::istream\&\ \mbox{\hyperlink{classterminal_1_1Terminal_aa2c5b3cd5f81b4647eb0650c1f4fb402}{scan}}(std::istream\&);}
+\DoxyCodeLine{00127\ }
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_af46d5b08cbae0e2ced16baf262f5b8dd}{connect}}(\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&);}
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_ac359510238dfc30c1b1bacfbf8735594}{disconnect}}(\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&);}
+\DoxyCodeLine{00148\ }
+
+
+
+
+
+
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_aeab2d6b90f28def0e5d8cd701bc69cf3}{increaseConnections}}();}
+
+
+
+
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_a169ead2611b4418307027dab589c0cd8}{decreaseConnections}}();}
+
+
+
+
+
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{classterminal_1_1Terminal_aa057526bb3a490bbc835b0594e969fb3}{operator<<}}(std::ostream\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&);}
+
+
+
+
+
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\ \&\mbox{\hyperlink{classterminal_1_1Terminal_a7362f183d018e5d5216d0430d78b3076}{operator>>}}(std::istream\ \&,\ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&);}
+
+
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classterminal_1_1Terminal_a7362f183d018e5d5216d0430d78b3076}{operator>>}}(\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&);}
+
+
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&\mbox{\hyperlink{classterminal_1_1Terminal_a210d6ce96d27f76d9726e782e122cc3d}{operator++}}();}
+
+
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \mbox{\hyperlink{classterminal_1_1Terminal_a210d6ce96d27f76d9726e782e122cc3d}{operator++}}(\textcolor{keywordtype}{int});}
+
+
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \&\mbox{\hyperlink{classterminal_1_1Terminal_a45115dd904295c700711f03a6d6b4503}{operator-\/-\/}}();}
+
+
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}}\ \mbox{\hyperlink{classterminal_1_1Terminal_a45115dd904295c700711f03a6d6b4503}{operator-\/-\/}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00197\ \ \ \ \ \};}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{int}\ Input(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ max,std::istream\&);}
+\DoxyCodeLine{00200\ \}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,199 @@
+\doxysection{Logic\+Element.\+h}
+\hypertarget{LogicElement_8h_source}{}\label{LogicElement_8h_source}\index{LogicElement/LogicElement.h@{LogicElement/LogicElement.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ H\_LOGICELEMENT}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ H\_LOGICELEMENT}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}/home/maxfuls/Programs/Lab2/src/Terminal/Terminal.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}/home/maxfuls/Programs/Lab2/src/Vector/Vector.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }logicElement\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlogicElement_1_1Definitions}{Definitions}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal::Terminal::Type}}\ type;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ connections;}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{terminal::Terminal::Signal}}\ signal;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+
+
+
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal::Terminal::Type}}\ \mbox{\hyperlink{classlogicElement_1_1Definitions_af069a460fa9936ea2e53f3c701ec8088}{getType}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1Definitions_a7bd0d0662656d23e37cd214e6c580204}{getConnections}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{terminal::Terminal::Signal}}\ \mbox{\hyperlink{classlogicElement_1_1Definitions_a5729d0731b8b71595a344777bd24a0c7}{getSignal}}()\ \textcolor{keyword}{const};}
+
+
+
+
+\DoxyCodeLine{00035\ \ \ \ \ std::istream\&\ \mbox{\hyperlink{classlogicElement_1_1Definitions_ae54517d0cfb9cf2fae14786c76ec1099}{scan}}(std::istream\&);}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlogicElement_1_1DefStruct}{DefStruct}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{int}\ length;}
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{int}\ numInput\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{int}\ numOutput\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{classlogicElement_1_1Definitions}{Definitions}}\ *definitions;}
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+
+
+
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1DefStruct_a0767d18b2f6273f2ab93df77b917e62d}{getLength}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1DefStruct_abf5ff61b092ad3cd3a8a7143d0f9a62c}{getInput}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1DefStruct_a09d3b8c98f67e54789aea086b77121f5}{getOutput}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classlogicElement_1_1Definitions}{Definitions}}*\ \mbox{\hyperlink{classlogicElement_1_1DefStruct_a32a5fbf1a525b58dcd98f96dd2e1bda7}{getDefinitions}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classlogicElement_1_1DefStruct}{DefStruct}}(\textcolor{keywordtype}{int});}
+
+
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classlogicElement_1_1DefStruct_a854be1654e18ad72e87dd05835080ffe}{\string~DefStruct}}();}
+
+
+
+
+\DoxyCodeLine{00079\ \ \ \ \ std::istream\&\ \mbox{\hyperlink{classlogicElement_1_1DefStruct_a0bafd98c1313479ed819ca92dec96808}{scan}}(std::istream\&);}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\ \{}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{int}\ number;}
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classvector_1_1Vector}{vector::Vector<terminal::Terminal>}}\ inputTerminals;}
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{classvector_1_1Vector}{vector::Vector<terminal::Terminal>}}\ outputTerminals;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{public}:}
+
+
+\DoxyCodeLine{00092\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_aab114abfa915eff3d9e3cac90b191880}{LogicElement}}();}
+
+
+
+
+
+\DoxyCodeLine{00099\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_aab114abfa915eff3d9e3cac90b191880}{LogicElement}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+
+
+
+
+\DoxyCodeLine{00105\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_aab114abfa915eff3d9e3cac90b191880}{LogicElement}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classlogicElement_1_1DefStruct}{DefStruct}}\ \&,\ \textcolor{keywordtype}{int});}
+
+
+
+\DoxyCodeLine{00110\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a60cc57a03e6c38877900b5b3e25c24ef}{LogicElement}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\ \&)\ =\ \textcolor{keywordflow}{default};}
+
+
+
+\DoxyCodeLine{00115\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a5370e76034b2d2a183ee047bd08d983f}{LogicElement}}(\mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&\&)\ =\ \textcolor{keywordflow}{default};}
+
+
+
+\DoxyCodeLine{00120\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a1291c810588ec5cc8343afd343cc1dc2}{operator=}}(\mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&\&)\ =\ \textcolor{keywordflow}{default};}
+
+
+
+\DoxyCodeLine{00125\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\ \&\mbox{\hyperlink{classlogicElement_1_1LogicElement_a07beed2d35f27c57ad844e4a837a8981}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\ \&)\ =\ \textcolor{keywordflow}{default};}
+
+
+\DoxyCodeLine{00129\ \ \ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a19cab28dcef89331a99b785748c3e39e}{\string~LogicElement}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00130\ }
+
+
+
+
+
+\DoxyCodeLine{00137\ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a97f9ede0f2ec50526abdf3885cbbb163}{operator<<}}(std::ostream\&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&);}
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00147\ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a069522bbb72170dc397eba23ffddd4f4}{operator>>}}(std::istream\&,\ \mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&);}
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00157\ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{terminal::Terminal}}\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a7c93886252fc324c740afa60f45d3a13}{operator[]}}(\textcolor{keywordtype}{int});}
+
+
+
+\DoxyCodeLine{00162\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a069522bbb72170dc397eba23ffddd4f4}{operator>>}}(\mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\&);}
+\DoxyCodeLine{00163\ }
+
+
+
+\DoxyCodeLine{00168\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a113fa7de474fb1b2cfe87acf511a2176}{getNumber}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00173\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a7f526db02331ca2a871e0bcd5d0c32e4}{getNumberOfInput}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00178\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a728c4969fdad2464711acd49a359ab93}{getNumberOfOutput}}()\ \textcolor{keyword}{const};}
+
+
+
+\DoxyCodeLine{00183\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_ab931ee25b26c79f7225d71ba99450e74}{getNumberOfTerminals}}()\ \textcolor{keyword}{const};}
+
+
+
+
+\DoxyCodeLine{00189\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_aa17cfd34f528c08dad20f76648537905}{setNumber}}(\textcolor{keywordtype}{int});}
+
+
+
+
+\DoxyCodeLine{00195\ \ \ std::ostream\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_abc29799b4bb83492cf08d6f42be390aa}{print}}(std::ostream\&)\ \textcolor{keyword}{const};}
+
+
+
+
+\DoxyCodeLine{00201\ \ \ std::istream\&\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_aee35ae40591201b2bcb6a73d536c5d2c}{scan}}(std::istream\&);}
+
+
+
+\DoxyCodeLine{00206\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a96c64ca902b3f39888654ba552404d18}{addTerminal}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classterminal_1_1Terminal}{terminal::Terminal}}\ \&);}
+
+
+
+
+
+
+
+
+\DoxyCodeLine{00216\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classlogicElement_1_1LogicElement_a2b268710f3b9ea2f3bf1881ef4a44bd8}{connect}}(\mbox{\hyperlink{classlogicElement_1_1LogicElement}{LogicElement}}\ \&);}
+
+
+
+
+
+\DoxyCodeLine{00223\ \ \ \mbox{\hyperlink{classterminal_1_1Terminal}{terminal::Terminal}}\ \&\mbox{\hyperlink{classlogicElement_1_1LogicElement_ada2e2197e8b8c715c20ea88c5b230d2b}{getTerminal}}(\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal::Terminal::Type}},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00224\ \};}
+\DoxyCodeLine{00225\ \}}
+\DoxyCodeLine{00226\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

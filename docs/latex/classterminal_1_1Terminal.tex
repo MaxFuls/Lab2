@@ -1,0 +1,485 @@
+\doxysection{terminal\+::Terminal Class Reference}
+\hypertarget{classterminal_1_1Terminal}{}\label{classterminal_1_1Terminal}\index{terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}} \{ \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT}}
+, \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT}}
+ \}
+\item 
+enum class \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}} \{ \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}{OFF}}
+, \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}{ON}}
+, \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}{X}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classterminal_1_1Terminal_a0746a0bb1f8aa1ddeab7c89f56e1bbb3}\label{classterminal_1_1Terminal_a0746a0bb1f8aa1ddeab7c89f56e1bbb3} 
+{\bfseries Terminal} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \+: construct terminal with zero number, input type, 0 connections and X signal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_a20537b0f9e43e3caffb4d18a4bb29c4c}{Terminal}} (\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}, int, \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}, int)
+\begin{DoxyCompactList}\small\item\em Constructor with definition \+: construct terminal with parameters you enter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_a11d96636ded1fd7ef78bae0d94100734}{Terminal}} (\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}, int)
+\begin{DoxyCompactList}\small\item\em Constructor with type and number\+: construct terminal with type and number you enter, 0 connections and X signal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_afe9e2500a44bf48cf95cc77e701e06b8}{Terminal}} (const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \& \mbox{\hyperlink{classterminal_1_1Terminal_ac8041c2e8fb68dbfde779ef89f6afa07}{operator=}} (const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default reloaded copy assignment operator. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_aa9c9e21038807a3b7341547d860dddb9}\label{classterminal_1_1Terminal_aa9c9e21038807a3b7341547d860dddb9} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Terminal} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classterminal_1_1Terminal_abb12f4c5521ce778f4b3f6413d0d1ad8}{get\+Connections}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get amount of connections. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}} \mbox{\hyperlink{classterminal_1_1Terminal_a605c99c73b6db2136b083adb9a385380}{get\+Signal}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get state of signal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classterminal_1_1Terminal_a321cccff68436426e8003ad54b8152a2}{get\+Number}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get number of terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}} \mbox{\hyperlink{classterminal_1_1Terminal_a014015f82be6f57e054b1d0e19b79eb6}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get type of terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_abbab1890930841196d5a6220fbe9c8c0}{set\+Type}} (\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}})
+\begin{DoxyCompactList}\small\item\em Method required to set type of terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_ae7122efc8fc7cc207f670db38ab584a1}{set\+Connections}} (int)
+\begin{DoxyCompactList}\small\item\em Method required to set amount of connections. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_a65647b3f7015095553d08fcc2755409b}{set\+Signal}} (\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}})
+\begin{DoxyCompactList}\small\item\em Method required to set state of signal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_a96ab0b43dc28555d118669ced6e07a88}{set\+Number}} (int)
+\begin{DoxyCompactList}\small\item\em Method required to set number of terminal. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classterminal_1_1Terminal_a9d10c212df4f68af91d21a381db559db}{print}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method required to output your terminal to stream. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classterminal_1_1Terminal_aa2c5b3cd5f81b4647eb0650c1f4fb402}{scan}} (std\+::istream \&)
+\begin{DoxyCompactList}\small\item\em Method required to input your terminal from input stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_af46d5b08cbae0e2ced16baf262f5b8dd}{connect}} (\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Method required to connect output terminal with input\+: if you call this method with right parameters amount of connections of both terminals will increase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_ac359510238dfc30c1b1bacfbf8735594}{disconnect}} (\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Method required to disconnect output and input terminals\+: if ypu call this method with right parameters amount of connections of both terminals will decrease. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_aeab2d6b90f28def0e5d8cd701bc69cf3}{increase\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em Method required to increase amount of connections by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classterminal_1_1Terminal_a169ead2611b4418307027dab589c0cd8}{decrease\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em Method required to decrease amount of connections by one. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_a6494c372d06c0f3ac66c6130337aea2b}\label{classterminal_1_1Terminal_a6494c372d06c0f3ac66c6130337aea2b} 
+void {\bfseries operator$>$$>$} (\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Reloaded operator \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} required to connect output terminal with input\+: calls method "{}connect"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_a210d6ce96d27f76d9726e782e122cc3d}\label{classterminal_1_1Terminal_a210d6ce96d27f76d9726e782e122cc3d} 
+\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \& {\bfseries operator++} ()
+\begin{DoxyCompactList}\small\item\em Reloaded prefix increment required to increase amount of connections by one point\+: calls method "{}increase Connections"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_aabf06e11ae85bcdd9803fc77a8fd14e6}\label{classterminal_1_1Terminal_aabf06e11ae85bcdd9803fc77a8fd14e6} 
+\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} {\bfseries operator++} (int)
+\begin{DoxyCompactList}\small\item\em Reloaded postfix increment required to increase amount of connections by one point\+: calls method "{}increase Connections"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_a45115dd904295c700711f03a6d6b4503}\label{classterminal_1_1Terminal_a45115dd904295c700711f03a6d6b4503} 
+\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \& {\bfseries operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em Reloaded prefix decrement required to decrease amount of connections by one point\+: calls method "{}decrease Connections"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classterminal_1_1Terminal_a94a396bf73c23e7fe39a2e92510c0209}\label{classterminal_1_1Terminal_a94a396bf73c23e7fe39a2e92510c0209} 
+\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} {\bfseries operator-\/-\/} (int)
+\begin{DoxyCompactList}\small\item\em Reloaded postfix decrement required to decrease amount of connections by one point\+: calls method "{}decrease Connections"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classterminal_1_1Terminal_aa057526bb3a490bbc835b0594e969fb3}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Output operator. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classterminal_1_1Terminal_a7362f183d018e5d5216d0430d78b3076}{operator$>$$>$}} (std\+::istream \&, \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Input operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}\label{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7} 
+\index{terminal::Terminal@{terminal::Terminal}!Signal@{Signal}}
+\index{Signal@{Signal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{Signal}{Signal}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{terminal\+::\+Terminal\+::\+Signal}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OFF@{OFF}!terminal::Terminal@{terminal::Terminal}}\index{terminal::Terminal@{terminal::Terminal}!OFF@{OFF}}}\Hypertarget{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}\label{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4} 
+OFF&\doxylink{classterminal_1_1Terminal}{Terminal} is off, state of signal is 0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ON@{ON}!terminal::Terminal@{terminal::Terminal}}\index{terminal::Terminal@{terminal::Terminal}!ON@{ON}}}\Hypertarget{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}\label{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c} 
+ON&\doxylink{classterminal_1_1Terminal}{Terminal} is on, state of signal is 1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!terminal::Terminal@{terminal::Terminal}}\index{terminal::Terminal@{terminal::Terminal}!X@{X}}}\Hypertarget{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}\label{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383} 
+X&State of terminal is undefined, state of signal is X. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}\label{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399} 
+\index{terminal::Terminal@{terminal::Terminal}!Type@{Type}}
+\index{Type@{Type}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal\+::\+Terminal\+::\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OUTPUT@{OUTPUT}!terminal::Terminal@{terminal::Terminal}}\index{terminal::Terminal@{terminal::Terminal}!OUTPUT@{OUTPUT}}}\Hypertarget{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}\label{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34} 
+OUTPUT&Type of terminal is output, output terminal can not have more then 3 connections. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INPUT@{INPUT}!terminal::Terminal@{terminal::Terminal}}\index{terminal::Terminal@{terminal::Terminal}!INPUT@{INPUT}}}\Hypertarget{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}\label{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829} 
+INPUT&Type of terminal is input, input terminal can not have more then 1 connection, also for input terminal with 0 connections state of signal is X. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classterminal_1_1Terminal_a20537b0f9e43e3caffb4d18a4bb29c4c}\label{classterminal_1_1Terminal_a20537b0f9e43e3caffb4d18a4bb29c4c} 
+\index{terminal::Terminal@{terminal::Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily terminal\+::\+Terminal\+::\+Terminal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}}]{type,  }\item[{int}]{connections,  }\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}}]{signal,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Constructor with definition \+: construct terminal with parameters you enter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Enum value from enum class Type\+: \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT(0)} or \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT(1)} \\
+\hline
+{\em connections} & Amount of connections\+: from 0 to 1 for input terminal, from 0 to 3 for output terminal \\
+\hline
+{\em signal} & Enum value from Enum class Signal\+: \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}{OFF(0)}, \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}{ON(1)} or \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}{X(2)} \\
+\hline
+{\em number} & Number of terminal\+: positive integer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Number need be positive"{} if you enter negative number \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+Incorrect number of connections for this type of terminal"{} if you do \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_a11d96636ded1fd7ef78bae0d94100734}\label{classterminal_1_1Terminal_a11d96636ded1fd7ef78bae0d94100734} 
+\index{terminal::Terminal@{terminal::Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily terminal\+::\+Terminal\+::\+Terminal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}}]{type,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Constructor with type and number\+: construct terminal with type and number you enter, 0 connections and X signal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Enum value from enum class Type\+: \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT(0)} or \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT(1)} \\
+\hline
+{\em number} & Number of terminal\+: positive integer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Number need be positive"{} if you enter negative number \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_afe9e2500a44bf48cf95cc77e701e06b8}\label{classterminal_1_1Terminal_afe9e2500a44bf48cf95cc77e701e06b8} 
+\index{terminal::Terminal@{terminal::Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily terminal\+::\+Terminal\+::\+Terminal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Const reference to terminal which parameters you want to use to create new terminal \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classterminal_1_1Terminal_af46d5b08cbae0e2ced16baf262f5b8dd}\label{classterminal_1_1Terminal_af46d5b08cbae0e2ced16baf262f5b8dd} 
+\index{terminal::Terminal@{terminal::Terminal}!connect@{connect}}
+\index{connect@{connect}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{terminal }\end{DoxyParamCaption})}
+
+
+
+Method required to connect output terminal with input\+: if you call this method with right parameters amount of connections of both terminals will increase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Reference to input terminal \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Type of the first terminal need to output, the second is input"{} if you try to call this method from input terminal or with output terminal \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+Incorrect number of connections for connect"{} if you try to call this method from output terminal with 3 connections or with input terminal with 1 connection \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_a169ead2611b4418307027dab589c0cd8}\label{classterminal_1_1Terminal_a169ead2611b4418307027dab589c0cd8} 
+\index{terminal::Terminal@{terminal::Terminal}!decreaseConnections@{decreaseConnections}}
+\index{decreaseConnections@{decreaseConnections}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{decreaseConnections()}{decreaseConnections()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::decrease\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method required to decrease amount of connections by one. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em logic\+\_\+error} & with "{}\+Amount of connections is already 0"{} if you try to call this method from input or output terminal with 0 connections \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_ac359510238dfc30c1b1bacfbf8735594}\label{classterminal_1_1Terminal_ac359510238dfc30c1b1bacfbf8735594} 
+\index{terminal::Terminal@{terminal::Terminal}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{terminal }\end{DoxyParamCaption})}
+
+
+
+Method required to disconnect output and input terminals\+: if ypu call this method with right parameters amount of connections of both terminals will decrease. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Reference to input terminal \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Type of the first terminal need to output, the second is input"{} if you try to call this method from input terminal or with output terminal \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+Incorrect number of connections for connect"{} if you try to call this method from output terminal with 0 connections or with input terminal with 0 connection \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_abb12f4c5521ce778f4b3f6413d0d1ad8}\label{classterminal_1_1Terminal_abb12f4c5521ce778f4b3f6413d0d1ad8} 
+\index{terminal::Terminal@{terminal::Terminal}!getConnections@{getConnections}}
+\index{getConnections@{getConnections}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{getConnections()}{getConnections()}}
+{\footnotesize\ttfamily int terminal\+::\+Terminal\+::get\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get amount of connections. 
+
+\begin{DoxyReturn}{Returns}
+Amount of connections 
+\end{DoxyReturn}
+\Hypertarget{classterminal_1_1Terminal_a321cccff68436426e8003ad54b8152a2}\label{classterminal_1_1Terminal_a321cccff68436426e8003ad54b8152a2} 
+\index{terminal::Terminal@{terminal::Terminal}!getNumber@{getNumber}}
+\index{getNumber@{getNumber}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{getNumber()}{getNumber()}}
+{\footnotesize\ttfamily int terminal\+::\+Terminal\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get number of terminal. 
+
+\begin{DoxyReturn}{Returns}
+Number of terminal 
+\end{DoxyReturn}
+\Hypertarget{classterminal_1_1Terminal_a605c99c73b6db2136b083adb9a385380}\label{classterminal_1_1Terminal_a605c99c73b6db2136b083adb9a385380} 
+\index{terminal::Terminal@{terminal::Terminal}!getSignal@{getSignal}}
+\index{getSignal@{getSignal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{getSignal()}{getSignal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Terminal\+::\+Signal}} terminal\+::\+Terminal\+::get\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get state of signal. 
+
+\begin{DoxyReturn}{Returns}
+Enum value from Enum class Signal\+: \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}{OFF(0)}, \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}{ON(1)} or \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}{X(2)} 
+\end{DoxyReturn}
+\Hypertarget{classterminal_1_1Terminal_a014015f82be6f57e054b1d0e19b79eb6}\label{classterminal_1_1Terminal_a014015f82be6f57e054b1d0e19b79eb6} 
+\index{terminal::Terminal@{terminal::Terminal}!getType@{getType}}
+\index{getType@{getType}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Terminal\+::\+Type}} terminal\+::\+Terminal\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get type of terminal. 
+
+\begin{DoxyReturn}{Returns}
+Enum value from enum class Type\+: \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT(0)} or \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT(1)} 
+\end{DoxyReturn}
+\Hypertarget{classterminal_1_1Terminal_aeab2d6b90f28def0e5d8cd701bc69cf3}\label{classterminal_1_1Terminal_aeab2d6b90f28def0e5d8cd701bc69cf3} 
+\index{terminal::Terminal@{terminal::Terminal}!increaseConnections@{increaseConnections}}
+\index{increaseConnections@{increaseConnections}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{increaseConnections()}{increaseConnections()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::increase\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method required to increase amount of connections by one. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em logic\+\_\+error} & with "{}\+Max number of connections for input terminal is 1"{} if you try to call this method from input terminal with 1 connection \\
+\hline
+{\em logic\+\_\+error} & with "{}\+Max number of connections for output terminal is 3"{} if you try to call this method from output terminal with 3 connection \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_ac8041c2e8fb68dbfde779ef89f6afa07}\label{classterminal_1_1Terminal_ac8041c2e8fb68dbfde779ef89f6afa07} 
+\index{terminal::Terminal@{terminal::Terminal}!operator=@{operator=}}
+\index{operator=@{operator=}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \& terminal\+::\+Terminal\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default reloaded copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Const reference to terminal which parameters you want to copy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classterminal_1_1Terminal_a9d10c212df4f68af91d21a381db559db}\label{classterminal_1_1Terminal_a9d10c212df4f68af91d21a381db559db} 
+\index{terminal::Terminal@{terminal::Terminal}!print@{print}}
+\index{print@{print}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& terminal\+::\+Terminal\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Method required to output your terminal to stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to output stream return Reference to output stream \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classterminal_1_1Terminal_aa2c5b3cd5f81b4647eb0650c1f4fb402}\label{classterminal_1_1Terminal_aa2c5b3cd5f81b4647eb0650c1f4fb402} 
+\index{terminal::Terminal@{terminal::Terminal}!scan@{scan}}
+\index{scan@{scan}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily std\+::istream \& terminal\+::\+Terminal\+::scan (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Method required to input your terminal from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to input stream return Reference to input stream \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classterminal_1_1Terminal_ae7122efc8fc7cc207f670db38ab584a1}\label{classterminal_1_1Terminal_ae7122efc8fc7cc207f670db38ab584a1} 
+\index{terminal::Terminal@{terminal::Terminal}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::set\+Connections (\begin{DoxyParamCaption}\item[{int}]{connections }\end{DoxyParamCaption})}
+
+
+
+Method required to set amount of connections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connections} & Integer value from 0 to 1 for input terminal and from 0 to 3 for output\\
+\hline
+\end{DoxyParams}
+If you call this method with 0 from input terminal with 1 connection and any state of signal, you will set connections to 0 and state of signal to X 
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Number of connections for input terminal is 0 or 1"{} if you call this method with another value from input terminal \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+Number of connections for output terminal is 0, 1, 2 or 3"{} if you call this method with another value from output terminal \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_a96ab0b43dc28555d118669ced6e07a88}\label{classterminal_1_1Terminal_a96ab0b43dc28555d118669ced6e07a88} 
+\index{terminal::Terminal@{terminal::Terminal}!setNumber@{setNumber}}
+\index{setNumber@{setNumber}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{setNumber()}{setNumber()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::set\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Method required to set number of terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Positive integer \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Number need be positive"{} if you call this method with negative parameter \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classterminal_1_1Terminal_a65647b3f7015095553d08fcc2755409b}\label{classterminal_1_1Terminal_a65647b3f7015095553d08fcc2755409b} 
+\index{terminal::Terminal@{terminal::Terminal}!setSignal@{setSignal}}
+\index{setSignal@{setSignal}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{setSignal()}{setSignal()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::set\+Signal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{Signal}}}]{signal }\end{DoxyParamCaption})}
+
+
+
+Method required to set state of signal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal} & Enum value from Enum class Signal\+: \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a88559a0cfd8250c9d65970cc145c92d4}{OFF(0)}, \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a90651ebea9a35ec4e018c8157492e17c}{ON(1)} or \doxylink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7a02129bb861061d1a052c592e2dc6b383}{X(2)}\\
+\hline
+\end{DoxyParams}
+If you try to call this method with OFF or ON parameters from input terminal with 0 connections its state of signal will stay X \Hypertarget{classterminal_1_1Terminal_abbab1890930841196d5a6220fbe9c8c0}\label{classterminal_1_1Terminal_abbab1890930841196d5a6220fbe9c8c0} 
+\index{terminal::Terminal@{terminal::Terminal}!setType@{setType}}
+\index{setType@{setType}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void terminal\+::\+Terminal\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Method required to set type of terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Enum value from enum class Type\+: \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399a50a87f0d71f7221582dad4bf507a0f34}{OUTPUT(0)} or \doxylink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399aa84cc046d48610b05c21fd3670d0c829}{INPUT(1)} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classterminal_1_1Terminal_aa057526bb3a490bbc835b0594e969fb3}\label{classterminal_1_1Terminal_aa057526bb3a490bbc835b0594e969fb3} 
+\index{terminal::Terminal@{terminal::Terminal}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{c,  }\item[{const \mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{terminal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Output stream reference \\
+\hline
+{\em terminal} & Const reference to terminal for output to stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output stream reference 
+\end{DoxyReturn}
+\Hypertarget{classterminal_1_1Terminal_a7362f183d018e5d5216d0430d78b3076}\label{classterminal_1_1Terminal_a7362f183d018e5d5216d0430d78b3076} 
+\index{terminal::Terminal@{terminal::Terminal}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!terminal::Terminal@{terminal::Terminal}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{c,  }\item[{\mbox{\hyperlink{classterminal_1_1Terminal}{Terminal}} \&}]{terminal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Input stream reference \\
+\hline
+{\em terminal} & Reference to terminal for input from steam \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input stream reference 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Terminal/Terminal.\+h\item 
+Terminal/Terminal.\+cpp\end{DoxyCompactItemize}

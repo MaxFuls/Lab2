@@ -1,0 +1,407 @@
+\doxysection{logic\+Element\+::Logic\+Element Class Reference}
+\hypertarget{classlogicElement_1_1LogicElement}{}\label{classlogicElement_1_1LogicElement}\index{logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlogicElement_1_1LogicElement_aab114abfa915eff3d9e3cac90b191880}\label{classlogicElement_1_1LogicElement_aab114abfa915eff3d9e3cac90b191880} 
+{\bfseries Logic\+Element} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: construct logic element with zero number, zero quantity of input and output terminals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement_af71cd280431eddec2b9f23b4e9b3f6aa}{Logic\+Element}} (int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor with number of logic element, amount of input and output terminals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement_a351bc91a0d84affdf1430cae8bfd1bdf}{Logic\+Element}} (const \mbox{\hyperlink{classlogicElement_1_1DefStruct}{Def\+Struct}} \&, int)
+\begin{DoxyCompactList}\small\item\em Constructor with array of definitions an number\+: construct logic element according to definitions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement_a60cc57a03e6c38877900b5b3e25c24ef}{Logic\+Element}} (const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement_a5370e76034b2d2a183ee047bd08d983f}{Logic\+Element}} (\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Default move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_a1291c810588ec5cc8343afd343cc1dc2}{operator=}} (\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Default copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_a07beed2d35f27c57ad844e4a837a8981}{operator=}} (const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)=default
+\begin{DoxyCompactList}\small\item\em Default move assignment operator. \end{DoxyCompactList}\item 
+\Hypertarget{classlogicElement_1_1LogicElement_a19cab28dcef89331a99b785748c3e39e}\label{classlogicElement_1_1LogicElement_a19cab28dcef89331a99b785748c3e39e} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Logic\+Element} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_a7c93886252fc324c740afa60f45d3a13}{operator\mbox{[}$\,$\mbox{]}}} (int)
+\begin{DoxyCompactList}\small\item\em Reloaded \mbox{[}\mbox{]} operator required to get terminal from logic element\+: it works like array -\/ index can change from 0 to amount of terminals -\/ 1. Call with index from "{}0"{} to "{}amount of input terminals -\/ 1"{} you can get input terminal, call with index "{}amount of input terminals"{} to "{}amount of terminals"{} you can get output terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlogicElement_1_1LogicElement_a3b5d14e900db0707c519e651587316ca}{operator$>$$>$}} (\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)
+\begin{DoxyCompactList}\small\item\em Reloaded operator \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} required to connect output terminal from one logic element with input terminal from another. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlogicElement_1_1LogicElement_a113fa7de474fb1b2cfe87acf511a2176}{get\+Number}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get number of logic element. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlogicElement_1_1LogicElement_a7f526db02331ca2a871e0bcd5d0c32e4}{get\+Number\+Of\+Input}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get amount of input terminals. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlogicElement_1_1LogicElement_a728c4969fdad2464711acd49a359ab93}{get\+Number\+Of\+Output}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get amount of output terminals. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlogicElement_1_1LogicElement_ab931ee25b26c79f7225d71ba99450e74}{get\+Number\+Of\+Terminals}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get amount of terminals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlogicElement_1_1LogicElement_aa17cfd34f528c08dad20f76648537905}{set\+Number}} (int)
+\begin{DoxyCompactList}\small\item\em Method required to set number of logic element. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_abc29799b4bb83492cf08d6f42be390aa}{print}} (std\+::ostream \&) const
+\begin{DoxyCompactList}\small\item\em Method required to output state of logic element and states of terminals it contain to output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_aee35ae40591201b2bcb6a73d536c5d2c}{scan}} (std\+::istream \&)
+\begin{DoxyCompactList}\small\item\em Method required to input state of logic element and states of terminals it contain from input stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlogicElement_1_1LogicElement_a96c64ca902b3f39888654ba552404d18}{add\+Terminal}} (const \mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \&)
+\begin{DoxyCompactList}\small\item\em Method required to add new terminal to logic element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlogicElement_1_1LogicElement_a2b268710f3b9ea2f3bf1881ef4a44bd8}{connect}} (\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)
+\begin{DoxyCompactList}\small\item\em Method required to connect output terminal from "{}this"{} logic element with input terminal for another logic element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_ada2e2197e8b8c715c20ea88c5b230d2b}{get\+Terminal}} (\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal\+::\+Terminal\+::\+Type}}, int)
+\begin{DoxyCompactList}\small\item\em Method required to get reference to terminal containing in logic element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_a97f9ede0f2ec50526abdf3885cbbb163}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)
+\begin{DoxyCompactList}\small\item\em Reloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator required to output state of logic element to output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classlogicElement_1_1LogicElement_a069522bbb72170dc397eba23ffddd4f4}{operator$>$$>$}} (std\+::istream \&, \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&)
+\begin{DoxyCompactList}\small\item\em Reloaded \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} operator required to input parameters of logic element\+: number, amount of input and output terminals from input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlogicElement_1_1LogicElement_af71cd280431eddec2b9f23b4e9b3f6aa}\label{classlogicElement_1_1LogicElement_af71cd280431eddec2b9f23b4e9b3f6aa} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!LogicElement@{LogicElement}}
+\index{LogicElement@{LogicElement}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{LogicElement()}{LogicElement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily logic\+Element\+::\+Logic\+Element\+::\+Logic\+Element (\begin{DoxyParamCaption}\item[{int}]{num\+Input,  }\item[{int}]{num\+Output,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Constructor with number of logic element, amount of input and output terminals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Input} & Amount of input terminals \\
+\hline
+{\em num\+Output} & Amount of output terminals \\
+\hline
+{\em number} & Number of logic element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a351bc91a0d84affdf1430cae8bfd1bdf}\label{classlogicElement_1_1LogicElement_a351bc91a0d84affdf1430cae8bfd1bdf} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!LogicElement@{LogicElement}}
+\index{LogicElement@{LogicElement}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{LogicElement()}{LogicElement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily logic\+Element\+::\+Logic\+Element\+::\+Logic\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlogicElement_1_1DefStruct}{Def\+Struct}} \&}]{def\+Struct,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Constructor with array of definitions an number\+: construct logic element according to definitions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em def\+Struct} & struct including amount of input and output terminals and array of their definitions \\
+\hline
+{\em number} & Number of logic element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a60cc57a03e6c38877900b5b3e25c24ef}\label{classlogicElement_1_1LogicElement_a60cc57a03e6c38877900b5b3e25c24ef} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!LogicElement@{LogicElement}}
+\index{LogicElement@{LogicElement}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{LogicElement()}{LogicElement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily logic\+Element\+::\+Logic\+Element\+::\+Logic\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Const reference to logic element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a5370e76034b2d2a183ee047bd08d983f}\label{classlogicElement_1_1LogicElement_a5370e76034b2d2a183ee047bd08d983f} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!LogicElement@{LogicElement}}
+\index{LogicElement@{LogicElement}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{LogicElement()}{LogicElement()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily logic\+Element\+::\+Logic\+Element\+::\+Logic\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Rvalue reference to logic element \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlogicElement_1_1LogicElement_a96c64ca902b3f39888654ba552404d18}\label{classlogicElement_1_1LogicElement_a96c64ca902b3f39888654ba552404d18} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!addTerminal@{addTerminal}}
+\index{addTerminal@{addTerminal}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{addTerminal()}{addTerminal()}}
+{\footnotesize\ttfamily void logic\+Element\+::\+Logic\+Element\+::add\+Terminal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \&}]{terminal }\end{DoxyParamCaption})}
+
+
+
+Method required to add new terminal to logic element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Reference to terminal you want to add \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a2b268710f3b9ea2f3bf1881ef4a44bd8}\label{classlogicElement_1_1LogicElement_a2b268710f3b9ea2f3bf1881ef4a44bd8} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!connect@{connect}}
+\index{connect@{connect}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void logic\+Element\+::\+Logic\+Element\+::connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&}]{logic\+Element }\end{DoxyParamCaption})}
+
+
+
+Method required to connect output terminal from "{}this"{} logic element with input terminal for another logic element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Reference to terminal containing input terminal \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+You try to connect the same logic element"{} if you do \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+There no terminals to connect"{} if "{}this"{} logic element hasn\textquotesingle{}t output terminals or logic\+Element(parameter) hasn\textquotesingle{}t input terminals \\
+\hline
+{\em invalid\+\_\+argument} & with "{}\+The first logic element need to have free output terminals, and the second -\/ free input terminals"{} if "{}this"{} logic element hasn\textquotesingle{}t free output terminals or logic\+Element(parameter) hasn\textquotesingle{}t free input terminals \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlogicElement_1_1LogicElement_a113fa7de474fb1b2cfe87acf511a2176}\label{classlogicElement_1_1LogicElement_a113fa7de474fb1b2cfe87acf511a2176} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!getNumber@{getNumber}}
+\index{getNumber@{getNumber}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{getNumber()}{getNumber()}}
+{\footnotesize\ttfamily int logic\+Element\+::\+Logic\+Element\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get number of logic element. 
+
+\begin{DoxyReturn}{Returns}
+Number of logic element 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_a7f526db02331ca2a871e0bcd5d0c32e4}\label{classlogicElement_1_1LogicElement_a7f526db02331ca2a871e0bcd5d0c32e4} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!getNumberOfInput@{getNumberOfInput}}
+\index{getNumberOfInput@{getNumberOfInput}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{getNumberOfInput()}{getNumberOfInput()}}
+{\footnotesize\ttfamily int logic\+Element\+::\+Logic\+Element\+::get\+Number\+Of\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get amount of input terminals. 
+
+\begin{DoxyReturn}{Returns}
+Amount of input terminals 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_a728c4969fdad2464711acd49a359ab93}\label{classlogicElement_1_1LogicElement_a728c4969fdad2464711acd49a359ab93} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!getNumberOfOutput@{getNumberOfOutput}}
+\index{getNumberOfOutput@{getNumberOfOutput}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{getNumberOfOutput()}{getNumberOfOutput()}}
+{\footnotesize\ttfamily int logic\+Element\+::\+Logic\+Element\+::get\+Number\+Of\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get amount of output terminals. 
+
+\begin{DoxyReturn}{Returns}
+Amount of output terminals 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_ab931ee25b26c79f7225d71ba99450e74}\label{classlogicElement_1_1LogicElement_ab931ee25b26c79f7225d71ba99450e74} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!getNumberOfTerminals@{getNumberOfTerminals}}
+\index{getNumberOfTerminals@{getNumberOfTerminals}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{getNumberOfTerminals()}{getNumberOfTerminals()}}
+{\footnotesize\ttfamily int logic\+Element\+::\+Logic\+Element\+::get\+Number\+Of\+Terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get amount of terminals. 
+
+\begin{DoxyReturn}{Returns}
+Amount of terminals 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_ada2e2197e8b8c715c20ea88c5b230d2b}\label{classlogicElement_1_1LogicElement_ada2e2197e8b8c715c20ea88c5b230d2b} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!getTerminal@{getTerminal}}
+\index{getTerminal@{getTerminal}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{getTerminal()}{getTerminal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \& logic\+Element\+::\+Logic\+Element\+::get\+Terminal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal\+::\+Terminal\+::\+Type}}}]{type,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Method required to get reference to terminal containing in logic element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Enum value from enum class type\+: OUTPUT(0) or INPUT(1); type of terminal you want to get \\
+\hline
+{\em number} & Number of terminal you want to get return Reference to terminal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a07beed2d35f27c57ad844e4a837a8981}\label{classlogicElement_1_1LogicElement_a07beed2d35f27c57ad844e4a837a8981} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator=@{operator=}}
+\index{operator=@{operator=}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \& logic\+Element\+::\+Logic\+Element\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Rvalue reference to logic element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a1291c810588ec5cc8343afd343cc1dc2}\label{classlogicElement_1_1LogicElement_a1291c810588ec5cc8343afd343cc1dc2} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator=@{operator=}}
+\index{operator=@{operator=}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \& logic\+Element\+::\+Logic\+Element\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Const reference to logic element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a3b5d14e900db0707c519e651587316ca}\label{classlogicElement_1_1LogicElement_a3b5d14e900db0707c519e651587316ca} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily void logic\+Element\+::\+Logic\+Element\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlogicElement_1_1LogicElement}{logic\+Element\+::\+Logic\+Element}} \&}]{logic\+Element }\end{DoxyParamCaption})}
+
+
+
+Reloaded operator \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} required to connect output terminal from one logic element with input terminal from another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Element} & Reference to logic element containing input terminal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlogicElement_1_1LogicElement_a7c93886252fc324c740afa60f45d3a13}\label{classlogicElement_1_1LogicElement_a7c93886252fc324c740afa60f45d3a13} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal}{terminal\+::\+Terminal}} \& logic\+Element\+::\+Logic\+Element\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Reloaded \mbox{[}\mbox{]} operator required to get terminal from logic element\+: it works like array -\/ index can change from 0 to amount of terminals -\/ 1. Call with index from "{}0"{} to "{}amount of input terminals -\/ 1"{} you can get input terminal, call with index "{}amount of input terminals"{} to "{}amount of terminals"{} you can get output terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Incorrect index"{} if you try to call this method with negative index or with index which bigger then "{}amount of terminals -\/ 1"{} \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Reference to terminal 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_abc29799b4bb83492cf08d6f42be390aa}\label{classlogicElement_1_1LogicElement_abc29799b4bb83492cf08d6f42be390aa} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!print@{print}}
+\index{print@{print}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily std\+::ostream \& logic\+Element\+::\+Logic\+Element\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Method required to output state of logic element and states of terminals it contain to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to output stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to output stream 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_aee35ae40591201b2bcb6a73d536c5d2c}\label{classlogicElement_1_1LogicElement_aee35ae40591201b2bcb6a73d536c5d2c} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!scan@{scan}}
+\index{scan@{scan}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily std\+::istream \& logic\+Element\+::\+Logic\+Element\+::scan (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Method required to input state of logic element and states of terminals it contain from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to input stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+c Reference to input stream 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_aa17cfd34f528c08dad20f76648537905}\label{classlogicElement_1_1LogicElement_aa17cfd34f528c08dad20f76648537905} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!setNumber@{setNumber}}
+\index{setNumber@{setNumber}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{setNumber()}{setNumber()}}
+{\footnotesize\ttfamily void logic\+Element\+::\+Logic\+Element\+::set\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Method required to set number of logic element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Number of logic element \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Number need be positive"{} if you call it with negative parameter \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classlogicElement_1_1LogicElement_a97f9ede0f2ec50526abdf3885cbbb163}\label{classlogicElement_1_1LogicElement_a97f9ede0f2ec50526abdf3885cbbb163} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{c,  }\item[{const \mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&}]{logic\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Reloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator required to output state of logic element to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to output stream \\
+\hline
+{\em logic\+Element} & Const Reference to logic element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to output stream 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1LogicElement_a069522bbb72170dc397eba23ffddd4f4}\label{classlogicElement_1_1LogicElement_a069522bbb72170dc397eba23ffddd4f4} 
+\index{logicElement::LogicElement@{logicElement::LogicElement}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!logicElement::LogicElement@{logicElement::LogicElement}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{c,  }\item[{\mbox{\hyperlink{classlogicElement_1_1LogicElement}{Logic\+Element}} \&}]{logic\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Reloaded \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} operator required to input parameters of logic element\+: number, amount of input and output terminals from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to input stream \\
+\hline
+{\em logic\+Element} & Reference to logic element\\
+\hline
+\end{DoxyParams}
+This operator may set failbit flag for input stream if you enter incorrect values of parameters\+: negative number of logic element, negative amount of output or input terminals \begin{DoxyReturn}{Returns}
+Reference to input stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Logic\+Element/Logic\+Element.\+h\item 
+Logic\+Element/Logic\+Element.\+cpp\end{DoxyCompactItemize}

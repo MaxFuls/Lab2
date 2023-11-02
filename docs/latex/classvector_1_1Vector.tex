@@ -1,0 +1,228 @@
+\doxysection{vector\+::Vector\texorpdfstring{$<$}{<} S \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classvector_1_1Vector}{}\label{classvector_1_1Vector}\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classvector_1_1Vector_aab3901b6aa60c2339d09abdc8fe85887}\label{classvector_1_1Vector_aab3901b6aa60c2339d09abdc8fe85887} 
+{\bfseries Vector} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: construct vector with zero size and capacity equal to five. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector_1_1Vector_a38dcab2f49e78156062c5869e813049e}{Vector}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Constructor with capacity\+: construct vector with given capacity and zero size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector_1_1Vector_a272cb30cfc4bacd038a3e2e4207a3a56}{Vector}} (const \mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector_1_1Vector_aa629ca121b314cdd5e51f5bc74e1d483}{Vector}} (\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&\&vector) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classvector_1_1Vector_ae38fe00cb6b21df30654201f19547df9}\label{classvector_1_1Vector_ae38fe00cb6b21df30654201f19547df9} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Vector} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: frees used memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvector_1_1Vector_a03ce582b788d353d509c2a6a431192c4}{pushback}} (const S \&value)
+\begin{DoxyCompactList}\small\item\em Method required to add new element to the end of vector. \end{DoxyCompactList}\item 
+\Hypertarget{classvector_1_1Vector_a8c3ed727fdd9a7e6a44209ff211f1df4}\label{classvector_1_1Vector_a8c3ed727fdd9a7e6a44209ff211f1df4} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Return vector to default state with zero size and capacity equal to five. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvector_1_1Vector_aebec15d5b4b308d4c33053def281b737}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get size of vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvector_1_1Vector_af95208a82e3b4eec67a2a175de288d8e}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get vector capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \& \mbox{\hyperlink{classvector_1_1Vector_a14f68f59a9323cb9663e8df9d80d5372}{operator=}} (const \mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \& \mbox{\hyperlink{classvector_1_1Vector_a07e9e7c55a00c6bbf96a2d004a0c71bb}{operator=}} (\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&\&vector) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+S \& \mbox{\hyperlink{classvector_1_1Vector_ae3ef50cbfdd1c3efb413b8f023800a99}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Reloaded \mbox{[}\mbox{]} operator required to get element from vector. \end{DoxyCompactList}\item 
+const S \& \mbox{\hyperlink{classvector_1_1Vector_a52564b7f478f74f55b5d70a980b6cdcb}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em Reloaded \mbox{[}\mbox{]} operator for const vectors required to get element from vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classvector_1_1Vector_a38dcab2f49e78156062c5869e813049e}\label{classvector_1_1Vector_a38dcab2f49e78156062c5869e813049e} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+\mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::\+Vector (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor with capacity\+: construct vector with given capacity and zero size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & \doxylink{classvector_1_1Vector}{Vector} capacity \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Vector capacity need be positive"{} if you call constructor with negative value \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classvector_1_1Vector_a272cb30cfc4bacd038a3e2e4207a3a56}\label{classvector_1_1Vector_a272cb30cfc4bacd038a3e2e4207a3a56} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+\mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Reference to vector with which parameters you want to create new vector \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classvector_1_1Vector_aa629ca121b314cdd5e51f5bc74e1d483}\label{classvector_1_1Vector_aa629ca121b314cdd5e51f5bc74e1d483} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+\mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&\&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Rvalue reference to vector which parameters will be used to create new vector \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classvector_1_1Vector_af95208a82e3b4eec67a2a175de288d8e}\label{classvector_1_1Vector_af95208a82e3b4eec67a2a175de288d8e} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+int \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method required to get vector capacity. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classvector_1_1Vector}{Vector} capacity 
+\end{DoxyReturn}
+\Hypertarget{classvector_1_1Vector_aebec15d5b4b308d4c33053def281b737}\label{classvector_1_1Vector_aebec15d5b4b308d4c33053def281b737} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+int \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method required to get size of vector. 
+
+\begin{DoxyReturn}{Returns}
+Size of vector 
+\end{DoxyReturn}
+\Hypertarget{classvector_1_1Vector_a14f68f59a9323cb9663e8df9d80d5372}\label{classvector_1_1Vector_a14f68f59a9323cb9663e8df9d80d5372} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \& \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Const reference to vector you want to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copy of vector 
+\end{DoxyReturn}
+\Hypertarget{classvector_1_1Vector_a07e9e7c55a00c6bbf96a2d004a0c71bb}\label{classvector_1_1Vector_a07e9e7c55a00c6bbf96a2d004a0c71bb} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \& \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector_1_1Vector}{Vector}}$<$ S $>$ \&\&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Rvalue reference to vector which parameters you want to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copy of vector 
+\end{DoxyReturn}
+\Hypertarget{classvector_1_1Vector_ae3ef50cbfdd1c3efb413b8f023800a99}\label{classvector_1_1Vector_ae3ef50cbfdd1c3efb413b8f023800a99} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+S \& \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reloaded \mbox{[}\mbox{]} operator required to get element from vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of element in vector, may change from 0 to "{}size -\/ 1"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to element you need 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Incorrect index"{} if you call it with negative parameter or with parameter which bigger then "{}size -\/ 1"{} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classvector_1_1Vector_a52564b7f478f74f55b5d70a980b6cdcb}\label{classvector_1_1Vector_a52564b7f478f74f55b5d70a980b6cdcb} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+const S \& \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reloaded \mbox{[}\mbox{]} operator for const vectors required to get element from vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of element in vector, may change from 0 to "{}size -\/ 1"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Const reference to element you need 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & with "{}\+Incorrect index"{} if you call it with negative parameter or with parameter which bigger then "{}size -\/ 1"{} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classvector_1_1Vector_a03ce582b788d353d509c2a6a431192c4}\label{classvector_1_1Vector_a03ce582b788d353d509c2a6a431192c4} 
+\index{vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}!pushback@{pushback}}
+\index{pushback@{pushback}!vector::Vector$<$ S $>$@{vector::Vector$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{pushback()}{pushback()}}
+{\footnotesize\ttfamily template$<$class S $>$ \\
+void \mbox{\hyperlink{classvector_1_1Vector}{vector\+::\+Vector}}$<$ S $>$\+::pushback (\begin{DoxyParamCaption}\item[{const S \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method required to add new element to the end of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Const reference to object you want to add to vector \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vector/Vector.\+h\end{DoxyCompactItemize}

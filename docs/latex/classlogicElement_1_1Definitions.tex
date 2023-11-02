@@ -1,0 +1,79 @@
+\doxysection{logic\+Element\+::Definitions Class Reference}
+\hypertarget{classlogicElement_1_1Definitions}{}\label{classlogicElement_1_1Definitions}\index{logicElement::Definitions@{logicElement::Definitions}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal\+::\+Terminal\+::\+Type}} \mbox{\hyperlink{classlogicElement_1_1Definitions_af069a460fa9936ea2e53f3c701ec8088}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get type of terminal written in definition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlogicElement_1_1Definitions_a7bd0d0662656d23e37cd214e6c580204}{get\+Connections}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get amount of connections written in definition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{terminal\+::\+Terminal\+::\+Signal}} \mbox{\hyperlink{classlogicElement_1_1Definitions_a5729d0731b8b71595a344777bd24a0c7}{get\+Signal}} () const
+\begin{DoxyCompactList}\small\item\em Method required to get state of signal written in definition. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classlogicElement_1_1Definitions_ae54517d0cfb9cf2fae14786c76ec1099}{scan}} (std\+::istream \&)
+\begin{DoxyCompactList}\small\item\em Method required to get type, amount of connections and state of signal from input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlogicElement_1_1Definitions_a7bd0d0662656d23e37cd214e6c580204}\label{classlogicElement_1_1Definitions_a7bd0d0662656d23e37cd214e6c580204} 
+\index{logicElement::Definitions@{logicElement::Definitions}!getConnections@{getConnections}}
+\index{getConnections@{getConnections}!logicElement::Definitions@{logicElement::Definitions}}
+\doxysubsubsection{\texorpdfstring{getConnections()}{getConnections()}}
+{\footnotesize\ttfamily int logic\+Element\+::\+Definitions\+::get\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get amount of connections written in definition. 
+
+\begin{DoxyReturn}{Returns}
+Amount of connections 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1Definitions_a5729d0731b8b71595a344777bd24a0c7}\label{classlogicElement_1_1Definitions_a5729d0731b8b71595a344777bd24a0c7} 
+\index{logicElement::Definitions@{logicElement::Definitions}!getSignal@{getSignal}}
+\index{getSignal@{getSignal}!logicElement::Definitions@{logicElement::Definitions}}
+\doxysubsubsection{\texorpdfstring{getSignal()}{getSignal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal_ac55cac5afa4e5684b3a8e2c7636833f7}{terminal\+::\+Terminal\+::\+Signal}} logic\+Element\+::\+Definitions\+::get\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get state of signal written in definition. 
+
+\begin{DoxyReturn}{Returns}
+Enum value from enum class Signal\+: OFF(0), ON(1) or X(2) 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1Definitions_af069a460fa9936ea2e53f3c701ec8088}\label{classlogicElement_1_1Definitions_af069a460fa9936ea2e53f3c701ec8088} 
+\index{logicElement::Definitions@{logicElement::Definitions}!getType@{getType}}
+\index{getType@{getType}!logicElement::Definitions@{logicElement::Definitions}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classterminal_1_1Terminal_ac123543a374bedb024ac92e95d1ee399}{terminal\+::\+Terminal\+::\+Type}} logic\+Element\+::\+Definitions\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method required to get type of terminal written in definition. 
+
+\begin{DoxyReturn}{Returns}
+Enum value from enum class Type\+: OUTPUT(0) or INPUT(1) 
+\end{DoxyReturn}
+\Hypertarget{classlogicElement_1_1Definitions_ae54517d0cfb9cf2fae14786c76ec1099}\label{classlogicElement_1_1Definitions_ae54517d0cfb9cf2fae14786c76ec1099} 
+\index{logicElement::Definitions@{logicElement::Definitions}!scan@{scan}}
+\index{scan@{scan}!logicElement::Definitions@{logicElement::Definitions}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily std\+::istream \& logic\+Element\+::\+Definitions\+::scan (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Method required to get type, amount of connections and state of signal from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Reference to input stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to input stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Logic\+Element/Logic\+Element.\+h\item 
+Logic\+Element/Logic\+Element.\+cpp\end{DoxyCompactItemize}
